@@ -55,3 +55,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Open the default email client with the mailto URL
     window.location.href = mailtoUrl;
 });
+
+// Toggle menu for mobile view
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+});
+
