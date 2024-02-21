@@ -51,7 +51,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Construct the mailto URL
     var mailtoUrl = 'mailto:j.chukwuony@alustudent.com' +
                     '?subject=' + encodeURIComponent(subject) +
-                    '&body=' + encodeURIComponent(body);
+                    '&body=' + encodeURIComponent();
 
     // Open the default email client with the mailto URL
     window.location.href = mailtoUrl;
