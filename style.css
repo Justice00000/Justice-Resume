@@ -47,3 +47,25 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+/* Style for Mobile View */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + .menu {
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
