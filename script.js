@@ -46,7 +46,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     var message = document.getElementById('message').value;
 
     var subject = 'New message from ' + name;
-    var body = 'Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message;
 
     // Construct the mailto URL
     var mailtoUrl = 'mailto:j.chukwuony@alustudent.com' +
