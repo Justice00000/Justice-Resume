@@ -37,3 +37,22 @@ function isValidEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    var subject = 'New message from ' + name;
+    var body = 'Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message;
+
+    // Construct the mailto URL
+    var mailtoUrl = 'mailto:j.chukwuony@alustudent.com' +
+                    '?subject=' + encodeURIComponent(subject) +
+                    '&body=' + encodeURIComponent(body);
+
+    // Open the default email client with the mailto URL
+    window.location.href = mailtoUrl;
+});

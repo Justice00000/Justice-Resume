@@ -124,12 +124,15 @@
     
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id="contactForm" action="#">
-            <input type="text" id="name" placeholder="Your Name">
-            <input type="email" id="email" placeholder="Your Email">
-            <textarea id="message" placeholder="Please type in your message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
     </section>
     
     <footer>
